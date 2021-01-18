@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  text-align: left;
+  color: #fff;
+  margin: 0;
+  min-height: 100vh;
+}
+button {
+  font-family: inherit;
+  font-size: 15px;
+  display: block;
+  margin: 50px auto;
+  width: 100px;
+  padding: 15px;
+}
+.joke,
+.user {
+  width: 50%;
+  height: 100vh;
+}
+.joke {
+  background-color: crimson;
+}
+.user {
+  background-color: rebeccapurple;
+}
