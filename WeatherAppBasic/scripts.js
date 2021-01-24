@@ -11,6 +11,10 @@ form.addEventListener("submit", async (e) => {
       "https://api.openweathermap.org/data/2.5/weather",
       config
     );
+    const lis = document.querySelectorAll("li");
+    for (let li of lis) {
+      li.remove();
+    }
     displayResponse(response.data);
   } catch (error) {
     throw "Ops, Something has happened";
@@ -21,13 +25,15 @@ function displayResponse(response) {
   const data = [
     response.name,
     response.main.temp,
-    response.name,
     response.sys.country,
     response.weather[0].main,
   ];
+  const description = ["City: ", "Temp (C): ", "Country ID: ", "Weather: "];
+  let i = 0;
   for (let e of data) {
     const li = document.createElement("li");
-    li.textContent = e;
+    li.textContent = `${description[i]}${e}`;
     ul.appendChild(li);
+    i++;
   }
 }
