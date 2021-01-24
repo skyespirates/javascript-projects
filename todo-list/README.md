@@ -1,2 +1,2 @@
-![todos-1](./images/todos.jpg)
-![todos-2](./images/todos-2.jpg)
+![todos-1](https://github.com/skyespirates/javascript-projects/blob/master/todo-list/images/todos.JPG)
+![todos-2](https://github.com/skyespirates/javascript-projects/blob/master/todo-list/images/todos-2.JPG)
